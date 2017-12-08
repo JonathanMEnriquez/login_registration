@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#wrapper{
+    
+}
+
+#wrapper h1{
+    text-align: center;
+    color: gold;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+#login_box{
+    border: 1px solid black;
+    padding: 10px;
+    width: 150px;
+    position: relative;
+    left: 44%;
+    margin-top: 50px;
+}
+
+#submit{
+    background-color: rgb(255, 241, 173);
+    padding: 4px;
+}
+
+#login_box h5{
+    margin-bottom: 10px;
+}
+
+#login_box input{
+    margin-bottom: 7px;
+}
+
+#new_user{
+    margin-top: 15px;
+    text-align: center;
+}
+
+#new_user a{
+    text-decoration: none;
+    color: gold;
+}
+
+.login_fail{
+    color: red;
+    font-size: 10px;
+}
+/* for register.html */
+
+#register{
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+    position: relative;
+    left: 40%;
+    margin-top: 50px;
+    padding: 25px;
+    text-align: center;
+}
+
+#register input{
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+#register_header{
+    font-size: 33px;
+}
+
+.incomplete{
+    color: red;
+    font-size: 14px;
+}
+
+.invalid_email{
+    color: red;
+    font-size: 14px;
+}
+
+.invalid_password{
+    color: red;
+    font-size: 14px;
+}
+
+.invalid_name{
+    color: red;
+    font-size: 14px;
+}
+
+/* success page */
+
+#success{
+    border: 1px solid black;
+    padding: 10px;
+    width: 500px;
+    position: relative;
+    left: 28%;
+    margin-top: 50px;
+    padding: 25px;
+    text-align: center;
+}
+
+#success h1{
+    text-align: center;
+    color: gold;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+#wrapper p{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 13px;
+    display: inline-block;
+}
+
+#top_logout{
+    text-decoration-style: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    color: gold;
+}
+
+#thumbs_img{
+    width: 90%;
+    margin-left: 35px;
+    margin-top: 15px;
+}

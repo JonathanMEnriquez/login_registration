@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register!</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='loginstyle.css')}}">
+</head>
+<body>
+    <div id="wrapper">
+        <h1 id="register_header">Please enter your information below</h1>
+        <div id="register">
+            {% with messages = get_flashed_messages(with_categories=True) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <p class="{{category}}">{{category}}: {{message}}</p><br>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            <form action="/registering" method="POST">
+                <input type="text" name='email' placeholder="Email"><br>
+                <input type="text" name='first_name' placeholder="First Name"><br>
+                <input type="text" name='last_name' placeholder="Last Name"><br>
+                <input type="text" name='password' placeholder="Password"><br>
+                <input type="text" name='confirm_password' placeholder="Confirm Password"><br>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

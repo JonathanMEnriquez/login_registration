@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>You are logged in</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename="loginstyle.css")}}">
+</head>
+<body>
+    <div id="wrapper">
+        <p>You are logged in as {{session['name']}}</p> <a href="/logout" id="top_logout">LOG OUT</a>
+        <div id="success">
+            <h1>Welcome {{session['name']}}</h1>
+            <img id="thumbs_img" src="{{url_for('static', filename='thumbs.jpg')}}" alt="thumbs up">
+        </div>
+    </div>
+</body>
+</html>

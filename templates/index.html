@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='loginstyle.css')}}">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Welcome to my super-exclusive website!</h1>
+        <div id="login_box">
+            <h5>Please Login</h5>
+            <form action="/login" method="POST">
+                <input type="text" name="email" placeholder="Email"><br>
+                <input type="text" name="password" placeholder='Password'><br>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+            {% with messages = get_flashed_messages(with_categories=True) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <p class="{{category}}">{{category}}: {{message}}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+        <h5 id="new_user">
+            New to the site? <a href="/register">Register Here!</a>
+        </h5>
+    </div>
+</body>
+</html>
